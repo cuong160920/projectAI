@@ -50,7 +50,20 @@ def tmp4(row):
         return True
     return False
 
+def tmp5(row):
+    if (float)(row[7]) < 17.3 and (row[2] == 'Bạc' or row[2] == 'Xanh'or row[3] == 'Trắng' or row[3] == 'Vàng') and tmp3(row):
+        return True
+    return False
 
+def tmp6(row):
+    if tmp3(row) and (row[4] == '4GB' or row[4] == '8GB') and (row[3].startswith('Intel Core i3') or row[3].startswith('Intel Core i5') or row[3].startswith('Ryzen 3') or row[3].startswith('Ryzen 5')):
+        return True
+    return False
+
+def tmp7(row):
+    if row[8] == '3-CELL' or row[8] == '4-CELL' or row[8] == '6-CELL':
+        return True
+    return False
 
 
 def list_result(rule):
@@ -176,15 +189,117 @@ def list_result(rule):
                 if tmp4(row) and price6(row):
                     result.append(row)
             return result
+        elif rule == 'l21':
+            for row in csv_reader:
+                if tmp5(row) and price1(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l22':
+            for row in csv_reader:
+                if tmp5(row) and price2(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l23':
+            for row in csv_reader:
+                if tmp5(row) and price3(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l24':
+            for row in csv_reader:
+                if tmp5(row) and price4(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l25':
+            for row in csv_reader:
+                if tmp5(row) and price5(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l26':
+            for row in csv_reader:
+                if tmp5(row) and price6(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l27':
+            for row in csv_reader:
+                if tmp6(row) and price1(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l28':
+            for row in csv_reader:
+                if tmp6(row) and price2(row):
+                    result.append(row)
+            return result
+
+        elif rule == 'l29':
+            for row in csv_reader:
+                if tmp6(row) and price3(row):
+                    result.append(row)
+            return result
+
+        elif rule == 'l30':
+            for row in csv_reader:
+                if tmp6(row) and price4(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l31':
+            for row in csv_reader:
+                if tmp6(row) and price5(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l32':
+            for row in csv_reader:
+                if tmp6(row) and price6(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l33':
+            for row in csv_reader:
+                if tmp7(row) and price2(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l34':
+            for row in csv_reader:
+                if tmp7(row) and price3(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l35':
+            for row in csv_reader:
+                if tmp7(row) and price4(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l36':
+            for row in csv_reader:
+                if tmp7(row) and price5(row):
+                    result.append(row)
+            return result
+        
+        elif rule == 'l37':
+            for row in csv_reader:
+                if tmp7(row) and price6(row):
+                    result.append(row)
+            return result
+
+        elif rule == 'l38':
+            for row in csv_reader:
+                if price1(row) or price2(row) or price3(row):
+                    result.append(row)
+            return result
+        
         else:
-            pass
+            return result
 
-                    
 
-         
-
-'''  
-a = list_result('l20')
-for r in a:
-    print(r)
-'''
+a = list_result('l42')
+print(a)
