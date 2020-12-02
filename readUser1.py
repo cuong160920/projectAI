@@ -21,12 +21,7 @@ def conclude(gt):
                     if temp2[1].__contains__('l'):
                          return temp2[1]
                     td.append(temp2[1])
-                    used_rule.append(temp1[0])
-          
-
-gt = ['n4','p3']
-a = conclude(gt)
-print(a)            
+                    used_rule.append(temp1[0])      
 
 
            

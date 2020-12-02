@@ -299,7 +299,3 @@ def list_result(rule):
         
         else:
             return result
-
-
-a = list_result('l42')
-print(a)
