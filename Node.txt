@@ -1,0 +1,60 @@
+m1 DELL
+m2 ASUS
+m3 ACER
+m4 HP
+m5 LG
+m6 APPLE
+m7 LENOVO
+m8 MICROSOFT
+m9 MSI
+p1 Dưới 10 triệu
+p2 10-15 triệu
+p3 15-20 triệu
+p4 20-25 triệu
+p5 25-30 triệu
+p6 Trên 30 triệu
+n1 Gaming
+n2 Đồ họa kĩ thuật
+n3 Mỏng nhẹ
+n4 Cao cấp
+n5 Lập trình
+n6 Thời trang
+n7 Học tập-Văn phòng
+n8 Pin khỏe
+n9 Phổ thông
+c1 Xám
+c2 Đen
+c3 Bạc
+c4 Vàng
+c5 Xanh
+c6 Trắng
+mo1 < 14 inch
+mo2 14 inch
+mo3 15.6 inch
+mo4 17.3 inch
+ra1 4GB
+ra2 8GB
+ra3 16GB
+ca1 Onboard
+ca2 NVIDIA
+ca3 AMD 
+ca4 NVIDIA GeForce RTX
+ca5 NVIDIA GeForce GTX 
+ch1 Intel Core i3
+ch2 Intel Core i5
+ch3 Intel Core i7
+ch4 Ryzen 3
+ch5 Ryzen 5
+ch6 Ryzen 7
+h1 SSD
+h2 HDD
+h3 HDD + SSD
+w1 < 1.5 kg
+w2 1.5-2 kg
+w3 > 2 kg
+b1 2-CELL
+b2 3-CELL
+b3 4-CELL
+b4 6-CELL
+
+
