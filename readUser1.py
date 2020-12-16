@@ -1,7 +1,7 @@
 def conclude(gt):
      used_rule = []
      td = gt
-     f = open('D:\\rule1.txt', 'r+')
+     f = open('D:\COURSES\Project AI\\rule1.txt', 'r+')
      content = f.read()
      rules = content.split('\n')
      while(True):
